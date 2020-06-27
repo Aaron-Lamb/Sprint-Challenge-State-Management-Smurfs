@@ -11,7 +11,7 @@ const List = ({ getList, list }) => {
         <div>
             {list.map(person => {
                 return(
-                    <div>
+                    <div key={person.id}>
                         <h4>{person.name}</h4>
                         <h5>{person.age}</h5>
                         <h6>{person.height}</h6>
